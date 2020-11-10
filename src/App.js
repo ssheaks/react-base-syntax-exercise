@@ -5,15 +5,26 @@ import UserInput from './UserInput/UserInput'
 import UserOutput from './UserOutput/UserOutput'
 
 class App extends Component {
+
+  state = {
+    users: [
+    {username: 'SarahScores'},
+    {username: 'OaklandGazelle'},
+    {username: 'Gacha758'},
+    {username: 'hugoleocat'},
+    {username: 'rockclimber4lifee'}
+    ]
+  }
+
   render() {
     return (
       <div className="App">
         <UserInput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
+        <UserOutput username={this.state.users[0].username}/>
+        <UserOutput username={this.state.users[1].username}/>
+        <UserOutput username={this.state.users[2].username}/>
+        <UserOutput username={this.state.users[3].username}/>
+        <UserOutput username={this.state.users[4].username}/>
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
           <li>UserInput should hold an input element, UserOutput two paragraphs</li>
