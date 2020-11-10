@@ -16,10 +16,15 @@ class App extends Component {
     ]
   }
 
+  changeUsernameHandler = (event) => {
+    console.log(event.target.value)
+  }
+
   render() {
     return (
       <div className="App">
-        <UserInput />
+        <UserInput 
+        changeName={this.changeUsernameHandler.bind(this)}/>
         <UserOutput username={this.state.users[0].username}/>
         <UserOutput username={this.state.users[1].username}/>
         <UserOutput username={this.state.users[2].username}/>
