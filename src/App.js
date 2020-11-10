@@ -10,6 +10,10 @@ class App extends Component {
       <div className="App">
         <UserInput />
         <UserOutput />
+        <UserOutput />
+        <UserOutput />
+        <UserOutput />
+        <UserOutput />
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
           <li>UserInput should hold an input element, UserOutput two paragraphs</li>
