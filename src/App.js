@@ -18,6 +18,15 @@ class App extends Component {
 
   changeUsernameHandler = (event) => {
     console.log(event.target.value)
+    this.setState({
+      users: [
+        {username: event.target.value},
+        {username: 'OaklandGazelle'},
+        {username: 'Gacha758'},
+        {username: 'hugoleocat'},
+        {username: 'rockclimber4lifee'}
+        ]
+      })
   }
 
   render() {
